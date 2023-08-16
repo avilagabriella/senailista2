@@ -1,0 +1,6 @@
+Nome: Gabriella Godoi Avila
+Endereço: rua Portugal 888
+CEP: 13820-000
+Bairro: Santa cruz
+idade:16
+telefone: 19 0000-000
