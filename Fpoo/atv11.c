@@ -81,11 +81,10 @@ int main() {
         int temp = a;
         a = b;
         b = temp;
+        
     } else
 
     printf("ordem crescente: %d %d %d %d %d \n", a, b, c, d, e);
 
     return 0;
 }
-
-
