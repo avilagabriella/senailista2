@@ -108,26 +108,185 @@ int slice(int index){
 }
 
 int main(){
-    int op = 0;
-	int x;
-	do{
-			printf("\n1. Add Pilha\n2. DelPIlha\n3.Add Fila\n4. Del Fila\n5. Add Lista\n6. Del");
-			printf("Escolha uma opcao:");
-			sanf("%d", &op);
-			switch(op)
-			case 1;
-				printf("Informe um numero inteiro:");
-				scanf("%d", &x);
-				push(x);
-				mostraLista();
-			else if(op == 2){
-				printf("Infor,e o indice do valor a ser excluido:");
-				scanf("%d", &x);
-				slice(x);
-				pop();
-				mostraLista();
-			}
-	}while(op != 0);
-	printf("Obrigado por utilizar nosso programa");
+    int opcao, elemento;
+    int escolhaEstrutura;
+
+    do {
+    	
+        printf("\n Escolha a estrutura:\n");
+        printf(" 1 para Pilha\n");
+        printf(" 2 para Fila\n");
+        printf(" 3 para Lista\n");
+        printf(" 0 para encerrar o programa\n");
+
+        printf("\n Escolha uma opcao:");
+        scanf("%d", &escolhaEstrutura);
+
+        switch (escolhaEstrutura) {
+        	
+            case 1:
+            	
+                printf("\n 1 Adicionar elemento \n");
+                printf("\n 2 Retirar elemento \n");
+                printf("\n 3 Mostrar elementos \n");
+                printf("\n Escolha uma opcao: ");
+                scanf("%d", &opcao);
+
+                switch (opcao) {
+                	
+                    case 1:
+                    	
+                        printf("Digite o elemento a ser inserido:");
+                        scanf("%d", &elemento);
+                        
+                        if (pushPilha(elemento))
+                        
+                            printf("\n Elemento adicionado \n");
+                            
+                        else
+                        
+                            printf("\n Erro \n");
+                            
+                        break;
+                        
+                    case 2:
+                    	
+                        if (popPilha())
+                        
+                            printf("\n Elemento retirado \n");
+                            
+                        else
+                        
+                            printf("\n Erro \n");
+                            
+                        break;
+                        
+                    case 3:
+                    	
+                        mostraPilha();
+                        break;
+                        
+                    default:
+                    	
+                        printf("\n Opcao invalida \n");
+                        
+                }
+                
+                break;
+                
+            case 2:
+            	
+                printf("\n 1 Adicionar elemento \n");
+                printf("\n 2 Retirar elemento \n");
+                printf("\n 3 Mostrar elementos \n");
+                printf("\n Escolha uma opcao: ");
+                scanf("%d", &opcao);
+
+                switch (opcao) {
+                	
+                    case 1:
+                    	
+                        printf("\n Digite o elemento a ser inserido: ");
+                        scanf("%d", &elemento);
+                        
+                        if (pushFila(elemento))
+                        
+                            printf("\n Elemento adicionado \n");
+                            
+                        else
+                        
+                            printf("\n Erro \n");
+                            
+                        break;
+                        
+                    case 2:
+                    	
+                        if (popFila())
+                        
+                            printf("\n Elemento retirado \n");
+                            
+                        else
+                        
+                            printf("\n Erro \n");
+                            
+                        break;
+                        
+                    case 3:
+                    	
+                        mostraFila();
+                        break;
+                        
+                    default:
+                    	
+                        printf("\n Opcao invalida \n");
+                        
+                }
+                
+                break;
+                
+            case 3:
+            	
+                printf("\n 1 Adicionar elemento \n");
+                printf("\n 2 Retirar elemento \n");
+                printf("\n 3 Mostrar elementos \n");
+                printf("\n Escolha uma opcao: ");
+                scanf("%d", &opcao);
+
+                switch (opcao) {
+                	
+                    case 1:
+                    	
+                        printf("\n Digite o elemento a ser inserido: ");
+                        scanf("%d", &elemento);
+                        
+                        if (pushLista(elemento))
+                        
+                            printf("\n Elemento adicionado \n");
+                            
+                        else
+                        
+                            printf("\n Erro \n");
+                            
+                        break;
+                        
+                    case 2:
+                    	
+                        if (popLista())
+                        
+                            printf("\n Elemento retirado \n");
+                            
+                        else
+                        
+                            printf("\n Erro \n");
+                            
+                        break;
+                        
+                    case 3:
+                    	
+                        mostraLista();
+                        break;
+                        
+                    default:
+                    	
+                        printf("\n Opcao invalida \n");
+                        
+                }
+                
+                break;
+                
+            case 0:
+            	
+                printf("\n Encerrando o programa...\n");
+                
+                break;
+                
+            default:
+            	
+                printf("\n Escolha uma opcao valida. \n");
+                
+        }
+        
+    } while (escolhaEstrutura != 0);
+
+    return 0;
 }
-	

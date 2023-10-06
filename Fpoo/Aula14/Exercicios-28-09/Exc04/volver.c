@@ -1,46 +1,95 @@
 #include <stdio.h>
+#include <locale.h>
 
-	char calposicao(char comandos[], int n){
-		char posicao = 'N';
-	
-		
-		for(i = 0; i < n; i++){
-			if(comandos[i] == 'E'){
-				if(posicao == 'N'){
-					posicao = 'O';
-				}else if(posicao == 'O'){
-					posicao = 'S';
-				}else if(posicao == 'S'){
-					posicao = 'L';
-				}else{
-					posicao = 'N';
-				}
-			}else{
-				if(posicao == 'N'){
-					posicao = 'L';
-				}else if(posicao == 'L'){
-					posicao = 'S';
-				}else if(posicao == 'S'){
-					posicao = 'O';
-				}else{
-					posicao = 'N';
-			}
-		}
+char posicao(char comandos[], int N) {
+    char sentido = 'N';
+
+    int i;
+
+    for (i = 0; i < N; i++) {
+
+        if (comandos[i] == 'E') {
+
+            if (sentido == 'N') {
+                sentido = 'O';
+
+            } else if (sentido == 'O') {
+                sentido = 'S';
+
+            } else if (sentido == 'S') {
+                sentido = 'L';
+
+            } else if (sentido == 'L') {
+                sentido = 'N';
+
+            }
+        } else if (comandos[i] == 'D') {
+
+            if (sentido == 'N') {
+                sentido = 'L';
+
+            } else if (sentido == 'L') {
+                sentido = 'S';
+
+            } else if (sentido == 'S') {
+                sentido = 'O';
+
+            } else if (sentido == 'O') {
+                sentido = 'N';
+
+            }
+
+        }
+
     }
-		return posicao;
-	}
-	int main(){
-		int n;
-		char comandos[1001];
-		
-		while(1){
-			scanf("%d", &n);
-			if(n == 0){
-				break;
-			}
-			scanf("%s", comandos);
-			char posicaoFinal = calposicao(comandos, n);
-			printf("%c\n", posicaoFinal);
-		}
-	return 0;
+
+    return sentido;
+}
+
+int main() {
+    setlocale(LC_ALL, " ");
+
+    int N;
+    char comandos[1001];
+
+    FILE *entrada = fopen("esquerda.in", "r");
+
+    if (entrada == NULL) {
+
+        printf("Erro ao abrir o arquivo");
+
+    }
+
+    FILE *saida = fopen("esquerda.out", "w");
+
+    if (saida == NULL) {
+
+        printf("Erro ao abrir o arquivo");
+
+        fclose(entrada);
+
+    }
+
+    while (1) {
+
+        fscanf(entrada, "%d", &N);
+
+        if (N == 0) {
+
+            break;
+
+        }
+
+        fscanf(entrada, "%s", comandos);
+
+        char PosicaoF = posicao(comandos, N);
+
+        fprintf(saida, "\n %c \n", PosicaoF);
+
+    }
+
+    fclose(entrada);
+    fclose(saida);
+
+    return 0;
 }
