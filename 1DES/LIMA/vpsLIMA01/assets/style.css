@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #252525;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+nav {
+    color: white;
+}
+
+.upper-nav {
+    display: flex;
+    height: 5vh;
+    background-color:#673AB7;
+
+    
+    justify-content: space-between;
+}
+
+.upper-nav .nav-left, .upper-nav .nav-right {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.3em;
+    margin-inline: 1vw;
+    gap: 20px;
+}
+
+.sub-nav {
+    font-size: 2.3em;
+    padding: 8px;
+    text-align: center;
+
+    cursor: default;
+}
+
+.sub-nav span {
+    color: #FFC107;
+}
+
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 24vh;
+    overflow: hidden;
+}
+
+.banner-b img{
+    position: absolute;
+    top: -43vh;
+    width: 100vw;
+    height: 110vh;
+}
+
+.banner-style {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+
+.banner-bg {
+    position: absolute;
+    width: 48vw;
+    height: 15vh;
+    
+    opacity: 0.6;
+
+    background-color: white;
+    border-radius: 33px;
+}
+
+.banner-info {
+    z-index: 1;
+    text-align: center;
+}
+
+.banner-info h2 {
+    opacity: 1;
+    font-size: 2em;
+}
+
+.banner-info input[type="text"] {
+    background-color: white;
+    width: 35%;
+    padding: 7px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.painel {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.painel-info {
+    display: flex;
+    height: 85%;
+    margin-top: 3%;
+    gap: 50px;
+    color: white;
+}
+
+.painel-info img {
+    width: 400px;
+    border: 2px solid #FFC107;
+    border-radius: 100px 0px 100px 0px;
+}
+
+.painel-info-h {
+    margin-top: 5%;
+}
+
+.painel-info-h h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.painel-info-h p {
+    margin-bottom: 40px;
+}
+
+.painel-info-h button {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+    background-color: #FFC107;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-box input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

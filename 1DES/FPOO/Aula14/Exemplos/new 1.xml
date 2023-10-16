@@ -1,0 +1,14 @@
+<documento>
+	<elemento>
+		<nome>Ana Silva<nome>
+		<idade>18<idade>
+	</elemento>
+	<elemento>
+		<nome>Maria Melo<nome>
+		<idade>20<idade>
+	</elemento>
+	<elemento>
+		<nome>Joaquim<nome>
+		<idade>3<idade>
+	</elemento>
+</documento>
