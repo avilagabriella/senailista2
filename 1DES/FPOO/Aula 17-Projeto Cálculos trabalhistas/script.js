@@ -1,0 +1,63 @@
+class Pagamento{
+    constructor(nome,salario) {
+        this.nome = nome;
+        this.salario = salario;
+        this.salarioBase = (this.salario - this.inss().toFixed);
+        this.salarioLiquido = (salarioBase - this.irrf().toFixed);
+}
+inss() {
+    if (this.salario < 1320.01)
+        return this.salario * 7.5 / 100;
+    else if (this.salario < 2571.30)
+        return this.salario * 9 / 100;
+    else if (this.salario < 3856.95)
+        return this.salario * 12 / 100;
+    else if (this.salario < 7507.49)
+        return this.salario * 14 / 100;
+    else
+        return 1051.05;
+    }
+irrf() {
+     if (this.salario < 1903.99)
+         return 0;
+     else if (this.salario < 2826.66)
+         return this.salario * 7.5 / 100 - 142.8;
+     else if (this.salario < 3751.06)
+        return this.salario * 15 / 100 - 354.8;
+    else if (this.salario < 4664.69)
+         return this.salario * 22.5 / 100 - 636.13;
+    else
+         return salario * 27.5 / 100 - 869.36;
+    }
+}
+
+const pgro1 = new Pagamento("João", 2500);
+console.log("pgto1");
+
+const pgro2 = new Pagamento("maria", 3500);
+console.log("pgto2");
+
+
+let salario = 1000;
+let inss = inss(salario);
+let salarioBase = salario - inss;
+let irrf = irrf(salarioBase);
+let salarioLiquido = salarioBase - irrf;
+
+console.log("Salário: " + salario);
+console.log("INSS: " + inss);
+console.log("Salário Base: " + salarioBase);
+console.log("IRRF: " + irrf);
+console.log("Salário Líquido: " + salarioLiquido);
+
+
+    
+    showHTML(){
+        let str =`<label>Nome:</label><label>${this.nome}</label>`;
+        str += `<label>Salário:</label><label>${this.salario}</label>`;
+        str += `<label>SalárioBase:</label><label>${this.salarioBase}</label>`;
+        str += `<label>Salário:</label><label>${ this.salarioLiquido}</label>`;
+    
+        return str;
+    }
+
