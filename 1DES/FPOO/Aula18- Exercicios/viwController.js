@@ -23,5 +23,7 @@ function criarCard(){
         cardNew.querySelector("#salarioLiquido").innerHTML = pessoa.salarioLiquido;
         cards.appendChild(cardNew);
     })
-    
 }
+    function Excluircard(){
+        document.querySelector('.card').remove();
+    }
