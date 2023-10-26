@@ -1,0 +1,62 @@
+body{
+    background-color: rgba(127, 240, 255, 0.472) ;
+}
+
+.card{
+    width: 250px;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0, .5);
+}
+.card h1{
+    text-align: center;
+}
+
+.model{
+    display: none;
+}
+form{
+    text-align:center;
+    width: 1900px;
+    border-radius: 20px;
+    padding: 20px;
+}
+form > #nome{
+    border-radius: 50px;
+    width: 365px;
+    height: 30px;
+}
+form > #salario{
+    border-radius: 50px;
+    width: 365px;
+    height: 30px;
+}
+form > #Enviar{
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+}
+form > #Remover{
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+}
+.apaga{
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.cards{
+ color:cornflowerblue;
+ display:flex;
+ justify-content:space-evenly;
+ flex-wrap: wrap;
+ margin: 100px;
+ height: 30px;
+}
