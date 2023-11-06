@@ -1,0 +1,13 @@
+-Normalizados
+-Relacionados
+
+Bancos-Dados relacionais
+
+Entidade=Tabelas 
+	 
+Cardinalidade  
+1 para 1
+1 para N
+N para N
+
+indexar=
