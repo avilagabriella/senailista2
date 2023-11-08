@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <form   action="https://formspree.io/f/mwkdzyoq" method="POST"">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"><br> -->
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer > 
+</script>
+</html>
