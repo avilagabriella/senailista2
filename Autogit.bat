@@ -1,4 +1,4 @@
 git pull
 git add .
-git commit -m "autogit"
+git commit -m "Atts"
 git push

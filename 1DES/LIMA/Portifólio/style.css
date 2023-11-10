@@ -1,130 +1,84 @@
-.p{
-    display:flex;
-    flex-wrap:wrap;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body{
-    background-color: #ddd;
-}
-.dolar{
-    display:flex;
-    flex-wrap:wrap;
-    margin-top: 20px;
-}
-.dolar > h4{
-    font-weight:bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 15px;
-}
-.dolar > p{
-    color:crimson;
-    margin:20px;
-    font-weight:bold;
-}
-.euro{
-    display:flex;
-    flex-wrap:wrap;
-    margin-top: 20px;
-}
-.euro > h4{
-    font-weight:bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 15px;
-}
-.euro > p{
-    color:rgb(20, 220, 80);
-    margin:20px;
-    font-weight:bold;
-}
-.temperatura{
-    display:flex;
-    flex-wrap:wrap;
-    margin-top: 20px;
-}
-.temperatura > h4{
-    font-weight:bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 15px;
-}
-.temperatura > p{
-    color:rgb(126, 229, 217);
-    margin:20px;
-    font-weight:bold;
-}
-.a{
-    display:flex;
-    flex-wrap:wrap;
-}
-.logo > img{
-    margin-left:400px;
-    width:100px;
-    height:100px;
-}
-.lupa{
     display: flex;
-    margin-top:26px;
+    flex-direction: column;
+    align-items: center;
+    background: #ddd;
+    width: 100vw;
 }
-.lupa input{
-    width:15vw;
-    height: 35px;
-    padding:15px;
-    border-radius:80px;
-    outline: none;
-    margin-left:600px;
-}
-.lupa img{
-    width:2rem;
-    height: 2rem;
-    transform: translateX(-50px);
 
+header{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #6a6a6a;
 }
+
+header div span b{
+    color: #000;
+    margin-right: 15px;
+}
+
+header .logo{
+    height: 120px;
+}
+
+header input{
+    height: 40px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 15px;
+    background: #8d8d8d;
+}
+
+header .lupa{
+    height: 25px;
+    margin: 0 0 -6px -30px;
+}
+
 main{
-    display:flex;
-    justify-content: space-evenly;
-}
-.biden1{
-    display:flex;
-}
-.biden1 img{
-    margin-left:15%;
-    width:290px;
-    height:150px;
-    padding:20px;
-}
-.b{
-    margin-left:40px;
-    margin-top:40px;
-}
-.vacina2{
-    display:flex;
-}
-.vacina2 img{
-    margin-left:15%;
-    width:310px;
-    height:150px;
-    padding:20px;
-}
-.b{
-    margin-left:40px;
-    margin-top:40px;
-}
-.india3{
-    display:flex;
-}
-.india3 img{
-    margin-left:15%;
-    width:350px;
-    height:150px;
-    padding:20px;   
-}
-.b{
-    margin-left:40px;
-    margin-top:40px;
-}
-coisas{
-    width:20px;
-    height:30px;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
 }
 
+.noticias img{
+    width: 400px;
+    margin: 25px;
+}
+
+.noticias div{
+    display: flex;
+}
+
+.noticias div span{
+    width: 400px;
+    margin-top: 25px;
+}
+
+.temas{
+    height: 350px;
+    width: 250px;
+    background: #fff;
+    margin-top: 25px;
+}
+
+.temas h3{
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+
+.temas p{
+    border-bottom: 1px solid black;
+    margin: 20px 20px;
+    padding-bottom: 20px;
+}
 
 
 
