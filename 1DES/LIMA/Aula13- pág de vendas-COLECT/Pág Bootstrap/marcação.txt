@@ -1,0 +1,23 @@
+Lima:
+
+Ul(user Interfaces)
+
+HTML + CSS = lima
+	+JS =frontEnd
+
+framework= conjunto de bibliotecas
+	+produtividade
+	-personalidade
+
+metodo de trabalho
+Modelo=card
+Visão=comteiner
+Controle=script
+
+-Projetc(inicio,meio,fim)
+-design(plano)= iguais
+
+Wireframe-esboço das telas
+
+ctrl+alt f
+
