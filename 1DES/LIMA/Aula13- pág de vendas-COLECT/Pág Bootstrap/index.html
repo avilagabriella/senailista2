@@ -12,6 +12,8 @@
 <body class="text-center">
     <header class="text-center">
         <h1>CONECT Produtos</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
     </header>
     <main class="container">
         <div id="container" class="row justify-content-md-center">
@@ -22,6 +24,25 @@
                     alt="Imagem Padrão" class="img">
                 <button class="btn btn-secondary">Detalhes</button>
                 <p class="card-footer">Preço</p>
+                <div class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Formulário</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Informe seu nome:</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </main>
@@ -43,4 +64,5 @@
         crossorigin="anonymous"></script>
 </body>
 <script src="./script.js"></script>
+
 </html>
