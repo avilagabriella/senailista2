@@ -1,0 +1,17 @@
+body{
+    background-color: cadetblue;
+}
+h1{
+    padding-left: 450px;
+    color:bisque;
+}
+form{
+    padding-left: 497px;
+    justify-content: center;;
+}
+form imput{
+    border-radius: 10px;
+}
+form button{
+    border-radius: 10px;
+}
