@@ -1,0 +1,21 @@
+169.254=não recebe ip, cabo intacto
+
+APIPA= ip automático que o proprio sistema coloca,enquanto não tem
+
+8.8.8.8= google
+
+21= ftp
+80= http
+22= ssh -linux
+3389= rdp -windows
+8080= testes de programa(java)
+
+3000= nodeJS
+
+0-1024= sistema operacionais
+35mil portas
+
+protocolo de te stes= icmp
+
+
+

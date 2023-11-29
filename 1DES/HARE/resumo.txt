@@ -1,0 +1,145 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+											RESUMO - HARE 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	O QUE É ENDEREÇAMENTO DE IP = O endereçamento IP desempenha um papel crucial na comunicação de rede, permitindo que os dispositivos se localizem e se comuniquem de maneira eficaz.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	> É um sistema numérico que é atribuido em uma rede para indentificar e permitir que se comuniquem entre eles usando o IP, Existem dois padróes de indereçamento de IP, são eles:
+
+	> IPv4: É um conjunto com 4 conjuntos de numeros separados por pontos, possuindo 32 bits, cada conjunto varia os numeros de 0 a 255. EX: 192.168.1.1
+
+	> IPv6: É uma notação hexadecimal dividida em 8 conjuntos de 4 numeros, separados por dois pontos, possui 128 bits. EX:2001:0db8:85a3:0000:0000:8a2e:0370:7334
+	
+	> Identifica exclusivamente um dispositivo em uma rede
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	> DNS = Traduz nomes de domínio em endereços IP
+
+	> GATEWARE = Roteador usado para acessar redes fora da rede local
+
+	> MASCARA SUB-REDE =  Define a porção de rede e a porção de host do endereço IP / sequência contínua de bits 1 seguidos por uma sequência contínua de bits 0. Por exemplo, a máscara de sub-rede padrão de uma rede classe C é 255.255.255.0, o que em binário seria 11111111.11111111.11111111.00000000.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	> IP PRIVADO = Usado em redes privadas/particulares IP - 192.168 OU 10.
+
+	> IP PUBLICO = Identifica aparelho conectado a internet.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	> CLASSES DE ENDEREÇAMENTO:
+
+	-> A / B  / C = Utilizadas para endereços de casas.
+
+	-> D / E = Utilizadas para fins especiais.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	> DHCP = atribui automaticamente endereços IP a dispositivos em uma rede, facilitando a configuração de novos dispositivos sem intervenção manual.
+
+	> BITS = 1 na máscara de sub-rede indicam a parte da rede, enquanto os bits de 0 indicam a parte do host. Quando um endereço IP é "mascarado" usando a máscara de sub-rede, você pode identificar a rede e o host correspondentes.
+
+	> PROTOCOLO TCP = Responsável por garantir uma comunicação confiável e orientada à conexão entre duas aplicações em dispositivos diferentes.
+
+	> PROTOCOLO INTERNET = Responsável pela entrega de pacotes de dados de um host de origem para um host de destino em uma rede.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+											COMANDOS REDE:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	-> Exibe informações sobre configurações de IP, como endereço IP, máscara de sub-rede e gateway.
+
+	- bash
+	- Copy code
+	- ipconfig
+	- ping:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	-> Testa a conectividade com um host remoto enviando pacotes ICMP.
+
+	- bash
+	- Copy code
+	- ping google.com
+	- tracert:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	-> Exibe a rota que pacotes levam para alcançar um host específico.
+
+	- bash
+	- Copy code
+	- tracert google.com
+	- netstat:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	-> Exibe informações sobre portas abertas e conexões de rede.
+
+	- bash
+	- Copy code
+	- netstat -a
+	- nslookup:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	-> Realiza consultas de DNS para obter informações sobre registros DNS.
+
+	- bash
+	- Copy code
+	- nslookup google.com
+	- Comandosno Linux/Mac:
+	- ifconfig:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	-> Exibe a rota que pacotes levam para alcançar um host específico.
+
+	- bash
+	- Copy code
+	-traceroute google.com
+	-netstat:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	-> Exibe informações sobre portas abertas e conexões de rede.
+
+	- bash
+	-Copy code
+	-netstat -an
+	-dig:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+										FORMS: 
+
+padrao de rede mais rapido = gigabit ethernt
+
+cabo mais utilizado em lans = par trançado
+
+nome do conector mais utilizado em cabo local = rj-45
+
+velocidade maxima alcançada por cabos pares trançados cat5e = 1000
+
+wirelwss - wifi
+fibra optica - wann
+par trançado - lan 
+
+transferência de arquivos via internet utilizamos qual serviço = ftp
+
+Para resolução de nomes em IPs utilizamos qual serviço = dns
+
+Qual a porta mais utilizada pelo serviço de FTP= 21
+
+Assinale a alternativa incorreta, sobre comandos de rede = ipconfig			
+Camada de Rede - Ethernet, RJ45, Keystone, Path Panel
+Camada de Aplicação - HTTP, FTP, ISMTP, POP3	
+Camada de Transporte - UDP, TCP	
+Camada de Internet - IP, ARP
