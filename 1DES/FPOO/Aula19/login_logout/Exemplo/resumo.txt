@@ -1,0 +1,5 @@
+json= aceita varias linguas(API) INTEGRA INFORMAÇÕES
+
+DESTRO DO JS=puro(objeto)
+
+fora=string
